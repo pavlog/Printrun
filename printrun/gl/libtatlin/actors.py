@@ -169,15 +169,18 @@ class Platform(object):
 
         glPopMatrix()
 
-        # draw center
+        # draw center of world
         glBegin(GL_LINES)
         glColor4f(1,0,0,1)
         glVertex3f(-1.0, 1.0, 0.0)
         glVertex3f(1.0, -1.0, 0.0)
         glVertex3f(-1.0, -1.0, 0.0)
         glVertex3f(1.0, 1.0, 0.0)
+        # draw z axis
+        glColor4f(0,1,0,1)
+        glVertex3f(0.0, 0.0, 0.0)
+        glVertex3f(0.0, 0.0, 1.0)
         glEnd()
-
 
     def display(self, mode_2d=False):
         # FIXME: using the list sometimes results in graphical corruptions
