@@ -169,6 +169,16 @@ class Platform(object):
 
         glPopMatrix()
 
+        # draw center
+        glBegin(GL_LINES)
+        glColor4f(1,0,0,1)
+        glVertex3f(-1.0, 1.0, 0.0)
+        glVertex3f(1.0, -1.0, 0.0)
+        glVertex3f(-1.0, -1.0, 0.0)
+        glVertex3f(1.0, 1.0, 0.0)
+        glEnd()
+
+
     def display(self, mode_2d=False):
         # FIXME: using the list sometimes results in graphical corruptions
         # glCallList(self.display_list)
