@@ -8,3 +8,4 @@ uploads
 prontserve-env
 printrun/gcoder_line.c
 printrun/gcoder_line.so
+/*.suo

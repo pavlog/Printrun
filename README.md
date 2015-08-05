@@ -4,6 +4,11 @@ Printrun consists of printcore, pronsole and pronterface, and a small collection
   * pronsole.py is an interactive command-line host software with tabcompletion goodness
   * pronterface.py is a graphical host software with the same functionality as pronsole
 
+# MY CHANGES
+Coordinate system Center marked by red cross
+User frienly camera rotation
+  
+  
 # GETTING PRINTRUN
 
 This section suggests using precompiled binaries, this way you get everything bundled into one single package for an easy installation.
